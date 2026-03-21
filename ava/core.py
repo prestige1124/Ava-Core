@@ -18,7 +18,7 @@ class Ava:
     #     - Afternoon: "Good afternoon! What can I do for you?"
     #     - Evening: "Good evening! How can I help you tonight?"
     def greet(self):
-        return "Hello, I am Ava version 0.1. How can I assist you today?"
+        return "Hello, I am Ava version 0.2. How can I assist you today?"
     
     def process(self, command):
 

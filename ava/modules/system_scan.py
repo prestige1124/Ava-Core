@@ -1,11 +1,12 @@
+# Scan system for vulnerabilities
 
-
-#
-
+ 
 import psutil
 import platform
 
-
+# This module scans the system for vulnerabilities by collecting information about CPU usage, memory usage, disk usage, platform, and running processes. It uses the psutil library to gather this information and returns it in a structured format.
+# The run method collects the relevant data and returns it as a dictionary, which can then be used for further analysis or reporting. This module can be extended in the future to include more detailed vulnerability scanning and analysis based on the collected system information.
+# TODO: Implement more detailed vulnerability scanning based on the collected system information, such as checking for known vulnerabilities in running processes, analyzing system configurations, and providing recommendations for improving security.
 class SystemScan:
 
 
@@ -18,7 +19,7 @@ class SystemScan:
         data['platform'] = platform.system()
 
         process = []
-        for proc in psutil.process_iter(['pid', 'name', 'username']):
+        for proc in psutil.process_iter(['pid', 'name']):
             process.append(proc.info)
 
         data['processes'] = process
