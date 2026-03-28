@@ -18,7 +18,7 @@ class Ava:
     #     - Afternoon: "Good afternoon! What can I do for you?"
     #     - Evening: "Good evening! How can I help you tonight?"
     def greet(self):
-        return "Hello, I am Ava version 0.2. How can I assist you today?"
+        return "Hello, I am Ava version 0.3. How can I assist you today?"
     
     def process(self, command):
 
@@ -26,6 +26,17 @@ class Ava:
             from ava.modules.system_scan import SystemScan
             system_scan = SystemScan()
             return system_scan.run()
+        
+        if command == "analyze logs":
+            from ava.modules.log_analysis import LogAnalysis
+            log_analysis = LogAnalysis()
+            return log_analysis.analyze()
+
+
+        # netwrok
+
+        # reporting 
+
 
 
         return self.conversation.respond(command)
