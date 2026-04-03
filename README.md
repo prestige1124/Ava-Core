@@ -1,4 +1,4 @@
-# AVA (Autonomous Vigilance Assistant)
+# AVA (Automated Vigilance Assistant)
 ### Web-Based AI-Powered System Monitoring & Security Analysis Tool
 ![Status](https://img.shields.io/badge/status-alpha-orange)
 ![Version](https://img.shields.io/badge/version-v0.3-blue)
