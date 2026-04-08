@@ -11,7 +11,7 @@
     • Generate structured security reports
     • Generate accurate and insightful text responses
 ## Project Status
-### AVA is currently in Alpha (v0.3).
+### AVA is currently in Alpha
 ### Work in progress:
     • Core features are actively being developed and tested
     • Functionality is stable but still evolving
