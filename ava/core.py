@@ -18,7 +18,7 @@ class Ava:
     #     - Afternoon: "Good afternoon! What can I do for you?"
     #     - Evening: "Good evening! How can I help you tonight?"
     def greet(self):
-        return "Hello, I am Ava version 0.3. How can I assist you today?"
+        return "Hello, I am Ava version 0.4. How can I protect your system?"
     
     def process(self, command):
 
@@ -34,6 +34,12 @@ class Ava:
 
 
         # netwrok
+
+        if command == "scan network":
+            from ava.modules.network_scan import NetworkScanner
+            network_scanner = NetworkScanner()
+            network_scanner.scan_ports()
+            return network_scanner.get_open_ports()
 
         # reporting 
 
