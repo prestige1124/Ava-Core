@@ -40,7 +40,7 @@
 ## Installation
 ### Work in progress for installation, requirement text is empty
 
-### #git clone https://github.com/yourusername/ava-ai.git
+### #git clone [https://github.com/prestige1124/ava-ai.git](https://github.com/prestige1124/Ava-Core.git)
 
 ### #cd ava-ai
 
@@ -48,23 +48,17 @@
 
 ### Run:
 
-### python -m ava.interface.cli
-## Use case examples
-### >> scan system
+### python main.py
 
-### write case here
-
-### >> analyze logs
-
-### write case here
-
-### >> scan network
-
-### write case here
-
-### >> report system
-
-### write case here
+## Use case examples work in progress
+#### >> scan system
+#### write case here
+#### >> analyze logs
+#### write case here
+#### >> scan network
+#### write case here
+#### >> report system
+#### write case here
 
 ### >> ask ava why is cpu high
 
