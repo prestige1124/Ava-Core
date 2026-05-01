@@ -8,7 +8,7 @@ import re
 # Note: The current implementation assumes a specific log format and may need adjustments to work with different types of log files or formats.
 class LogAnalysis:
 
-    def analyze(self, logfile=r"C:\Users\jbrew\OneDrive\Documents\fake_auth.log.log"):
+    def analyze(self, logfile=r"C:\Users\jbrew\Documents\fake_auth.log.log"):
         
         failed_logins = 0
         sudo_attempts = 0

@@ -3,6 +3,13 @@
 # Ava - An AI Virtual Assistant
 # Core module   
 from ava.modules.conversation import ConversationModule
+from ava.modules.ai_main import AIModule
+
+
+# ava classs 
+# ava class 
+#  ava 
+
 
 
 # Ava class that serves as the main interface for the virtual assistant
@@ -10,17 +17,41 @@ from ava.modules.conversation import ConversationModule
 # The process method takes a command as input and returns the response from the conversation module.
 class Ava:
 
+    
+# 
+#  
     def __init__(self):
         self.conversation = ConversationModule()
+        self.ai = AIModule()
 
     # TODO: Add diffrent greetings based on time of day, user preferences, etc.
     #     - Morning: "Good morning! How can I assist you today?"
     #     - Afternoon: "Good afternoon! What can I do for you?"
     #     - Evening: "Good evening! How can I help you tonight?"
+    #    - User preferences: "Welcome back, [User Name]! How can I assist you today?"
+    #   - Consider adding more personalized greetings based on user preferences and history, such as referencing previous interactions or providing relevant information based on the user's interests and needs.
     def greet(self):
-        return "Hello, I am Ava version 0.5. I am here to assist you!"
+        return "Hello, I am Ava version 0.6! How can I assist you?"
 
-    def process(self, command):
+
+
+
+
+
+
+    def process(self, command: str):
+        
+
+
+        if command.startswith("ask"):
+            prompt = command.replace("ask ", "").strip()
+
+
+
+            if not prompt:
+                return "What question can i answer?"
+            return self.ai.ask(prompt)
+
 
 
         # System scan
@@ -65,14 +96,14 @@ class Ava:
             network_scanner.scan_ports()
             network_results = network_scanner.get_open_ports()
             
-            #TODO: Add more data collection and analysis for the report, such as collecting information about running processes, analyzing system configurations, and providing recommendations for improving security based on the collected data. Also, consider integrating with other modules for a more comprehensive security assessment.
+            # TODO: Add more data collection and analysis for the report, such as collecting information about running processes, analyzing system configurations, and providing recommendations for improving security based on the collected data. Also, consider integrating with other modules for a more comprehensive security assessment.
             data = {
                 "log_analysis": log_results,
                 "network_scan": network_results,
                 "system_scan": system_results
             }
 
-            #TODO: Enhance the report generation by adding more detailed analysis and insights based on the collected data, such as identifying potential vulnerabilities, providing recommendations for improving security, and integrating with other modules for a more comprehensive security assessment.
+            # TODO: Enhance the report generation by adding more detailed analysis and insights based on the collected data, such as identifying potential vulnerabilities, providing recommendations for improving security, and integrating with other modules for a more comprehensive security assessment.
             report_generator = Reporting()
             report_generator.generate_report(data)
 
